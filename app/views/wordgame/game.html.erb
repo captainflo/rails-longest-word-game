@@ -1,0 +1,25 @@
+
+<h1>Welcome to the longest word-game !</h1>
+<h2>Here is your grid</h2>
+<p><%= @grid %><p>
+<form action="/score">
+  <input type="text" id="question" name="attempt" placeholder="what is your word?">
+  <input type="hidden" name="start_time" value="<%= @start_time%>">
+  <input type="hidden" name="grid" value="<%= @grid%>">
+  <input type="submit" value="Go on!">
+</form>
+
+
+
+
+
+<!-- puts "******** Welcome to the longest word-game !********"
+puts "Here is your grid :"
+grid = generate_grid(9)
+puts grid.join(" ")
+puts "*****************************************************"
+
+puts "What's your best shot ?"
+start_time = Time.now
+attempt = gets.chomp
+end_time = Time.now -->
